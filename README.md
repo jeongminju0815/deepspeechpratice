@@ -36,8 +36,11 @@
   - 띄어쓰기 보정 후 : 91%
   - 대체 단어 보정 후 : 91% 
   -> 문제점 : 학습 속도가 느리다 1step 당 4분 30초 * 20 epoches = 약 1시간, batch size를 고려하지 않음
+  - test2.jpynb의 test2의 train, dev, test 별로 정확성 
+  - train, dev, test을 분류해서 정확율을 분석함
 2-1. batch size 설정
   - test.jpynb의 test3 chapter
   - batch size : train 64, dev 32, test 32 설정 
   - 학습 속도 1step 당 50초
   - 정확율 : 36%
+
