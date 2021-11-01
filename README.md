@@ -29,16 +29,19 @@
 1. cpu 환경에서 모델 학습 (I 행)
   - 20문장 중 5문장을 학습 시킨 결과 학습 자체는 잘되지만 학습외의 다른 문장을 테스트 해봤더니 학습에 사용된 문장이 결과로 나옴
   -> 문제점 : deepspeech에서 제공하는 기존 모델에서 학습 시키지 않아 기존 모델보다 성능이 떨어짐
-2. train, dev, test (8:1:1)로 학습
-  - test2.jpynb의 test2 chapter
+  
+### deepspeech test 4  
+1. train, dev, test (8:1:1)로 학습
+  ##### test2.jpynb의 test2 chapter
   - gpu 환경에서 train, dev, test의 dataset을 8:1:1의 비율로 나누어 학습 시켰다.
   - 정확율 : 89%
   - 띄어쓰기 보정 후 : 91%
   - 대체 단어 보정 후 : 91% 
   -> 문제점 : 학습 속도가 느리다 1step 당 4분 30초 * 20 epoches = 약 1시간, batch size를 고려하지 않음
-  - test2.jpynb의 test2의 train, dev, test 별로 정확성 
+  ##### test2.jpynb의 test2의 train, dev, test 별로 정확성 
   - train, dev, test을 분류해서 정확율을 분석함
-2-1. batch size 설정
+  - train : 90%, dev : 81%, test : 82%
+1-2. batch size 설정
   - test.jpynb의 test3 chapter
   - batch size : train 64, dev 32, test 32 설정 
   - 학습 속도 1step 당 50초
