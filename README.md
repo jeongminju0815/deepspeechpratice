@@ -44,6 +44,9 @@
   #### test2_othersentece.jpynb
   - 학습에 사용되지 않은 문장 test
   - 정확율 (띄어쓰기 보정, 대체단어 보정) : 63%
+  #### test4_othervoice.jpynb
+  - 학습에 사용되지 않은 목소리 test
+  - 정확율 (띄어쓰기 보정, 대체단어 보정) : 78%
  ### 1-2. batch size 설정
   - test.jpynb의 test3 chapter
   - batch size : train 64, dev 32, test 32 설정 
